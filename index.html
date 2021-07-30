@@ -30,17 +30,19 @@
     <div class="bg-white w-full">
       <div class="header h-16 bg-black flex items-center">
         <div class="logo w-1/5 h-16 ml-10 mb-1 pt-3">
-          <img
-            class="w-28 h-16 object-contain"
-            src="https://www.pinclipart.com/picdir/big/57-576184_view-our-amazon-storefront-amazon-logo-white-png.png"
-            alt="Amazon Logo"
-          />
+          <a href="/index.html">
+            <img
+              class="w-28 h-16 object-contain"
+              src="https://www.pinclipart.com/picdir/big/57-576184_view-our-amazon-storefront-amazon-logo-white-png.png"
+              alt="Amazon Logo"
+            />
+          </a>
         </div>
         <!-- Search Bar -->
         <input
           class="
             h-9
-            w-30
+            w-2/5
             bg-gray-800
             border border-blue-700 border-opacity-75
             rounded-l-xl
@@ -146,34 +148,58 @@
           </svg>
 
           <!-- cart icon -->
-          <div
-            class="
-              cart-icon
-              h-10
-              w-10
-              bg-blue-500
-              flex
-              items-center
-              justify-center
-              rounded-xl
-            "
-          >
-            <!-- cart svg icon -->
-            <svg
-              class="h-5 w-5 text-blue-300"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
+
+          <a href="/cart.html">
+            <div
+              class="
+                cart-icon
+                h-10
+                w-10
+                bg-blue-500
+                flex
+                items-center
+                justify-center
+                rounded-xl
+                relative
+              "
             >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
-              />
-            </svg>
-          </div>
+              <!-- Total Items in cart -->
+              <div
+                class="
+                  cart-item-number
+                  absolute
+                  -top-1
+                  -right-1
+                  h-4
+                  w-4
+                  bg-white
+                  rounded-full
+                  flex
+                  justify-center
+                  items-center
+                  text-gray-800 text-xs
+                "
+              >
+                1
+              </div>
+              <!-- cart svg icon -->
+              <svg
+                class="h-5 w-5 text-blue-300"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                />
+              </svg>
+            </div>
+          </a>
+
           <!-- bell svg icon -->
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -198,22 +224,19 @@
 
     <div class="main h-auto flex">
       <!-- Sidebar -->
-      <div
-        class="main-sidebar border-t-2 border-blue-700 w-1/5 bg-black p-6"
-      >
+      <div class="main-sidebar border-t-2 border-blue-700 w-1/5 bg-black p-6">
         <!-- categories -->
         <div class="sidebar-categories">
           <div
             class="
               sidebar-main-category
-              text-blue-500
+              text-blue-300
               cursor-pointer
               flex
               font-bold
               mb-4
               p-2
-              bg-blue-500
-              bg-opacity-50
+              bg-blue-500 bg-opacity-40
               rounded-lg
             "
           >
@@ -240,7 +263,7 @@
           <div
             class="
               sidebar-main-category
-              text-blue-700
+              text-blue-500
               cursor-pointer
               flex
               font-bold
@@ -253,7 +276,7 @@
           <div
             class="
               sidebar-main-category
-              text-blue-700
+              text-blue-500
               cursor-pointer
               flex
               font-bold
@@ -266,7 +289,7 @@
           <div
             class="
               sidebar-main-category
-              text-blue-700
+              text-blue-500
               cursor-pointer
               flex
               font-bold
@@ -279,7 +302,7 @@
           <div
             class="
               sidebar-main-category
-              text-blue-700
+              text-blue-500
               cursor-pointer
               flex
               font-bold
@@ -292,7 +315,7 @@
           <div
             class="
               sidebar-main-category
-              text-blue-700
+              text-blue-500
               cursor-pointer
               flex
               font-bold
@@ -305,7 +328,7 @@
           <div
             class="
               sidebar-main-category
-              text-blue-700
+              text-blue-500
               cursor-pointer
               flex
               font-bold
@@ -318,7 +341,7 @@
           <div
             class="
               sidebar-main-category
-              text-blue-700
+              text-blue-500
               cursor-pointer
               flex
               font-bold
@@ -335,7 +358,7 @@
           <div
             class="
               sidebar-main-category
-              text-blue-700
+              text-blue-500
               cursor-pointer
               flex
               font-bold
@@ -352,7 +375,7 @@
         </div>
       </div>
       <!-- main section -->
-      <div class="main-section flex-1 p-6 bg-gray-400">
+      <div class="main-section flex-1 p-6 bg-gray-900">
         <!-- banner -->
         <div class="main-section-banner h-44 rounded-lg flex items-end">
           <div
@@ -380,7 +403,7 @@
               popular
               categories
               font-bold
-              text-gray-700 text-2xl
+              text-gray-500 text-2xl
               flex
               items-center
             "
@@ -407,7 +430,7 @@
                 icon-desktop
                 h-20
                 w-20
-                bg-blue-300
+                bg-blue-900 bg-opacity-25
                 rounded-xl
                 flex
                 justify-center
@@ -435,7 +458,7 @@
                 icon-gift
                 h-20
                 w-20
-                bg-blue-300
+                bg-blue-900 bg-opacity-25
                 rounded-xl
                 flex
                 justify-center
@@ -464,7 +487,7 @@
                 icon-mobile
                 h-20
                 w-20
-                bg-blue-300
+                bg-blue-900 bg-opacity-25
                 rounded-xl
                 flex
                 justify-center
@@ -493,7 +516,7 @@
                 icon-book
                 h-20
                 w-20
-                bg-blue-300
+                bg-blue-900 bg-opacity-25
                 rounded-xl
                 flex
                 justify-center
@@ -522,7 +545,7 @@
                 icon-camera
                 h-20
                 w-20
-                bg-blue-300
+                bg-blue-900 bg-opacity-25
                 rounded-xl
                 flex
                 justify-center
@@ -557,7 +580,7 @@
                 icon-house
                 h-20
                 w-20
-                bg-blue-300
+                bg-blue-900 bg-opacity-25
                 rounded-xl
                 flex
                 justify-center
@@ -586,7 +609,7 @@
                 icon-music
                 h-20
                 w-20
-                bg-blue-300
+                bg-blue-900 bg-opacity-25
                 rounded-xl
                 flex
                 justify-center
@@ -615,7 +638,7 @@
                 icon-lightbulb
                 h-20
                 w-20
-                bg-blue-300
+                bg-blue-900 bg-opacity-25
                 rounded-xl
                 flex
                 justify-center
@@ -642,10 +665,11 @@
         </div>
         <!-- Section Deals -->
         <div class="main-section-deals mt-5">
-          <h1 class="text-2xl font-bold text-gray-700 mb-5">Hot Deals 🔥</h1>
+          <h1 class="text-2xl font-bold text-gray-500 mb-5">Hot Deals 🔥</h1>
           <div class="main-section-product flex flex-wrap">
             <!-- Product 1 -->
             <div class="main-product m-2">
+              <!-- Img -->
               <div class="product-image w-48 h-52 bg-white rounded-lg">
                 <img
                   class="w-full h-full object-contain p-4"
@@ -653,7 +677,11 @@
                   alt=""
                 />
               </div>
-              <div class="product-name w-48 text-blue-700 font-bold mt-2 text-sm">
+
+              <!-- desc -->
+              <div
+                class="product-name w-48 text-blue-500 font-bold mt-2 text-sm"
+              >
                 Nintendo Switch with Neon Blue and Neon Red Joy‑Con -
                 HAC-001(-01)
               </div>
@@ -661,8 +689,26 @@
               <div class="product-rating text-yellow-300 font-bold my-1">
                 ⭐⭐⭐⭐⭐ 4.5
               </div>
-              <div class="product-price font-bold text-blue-700 text-lg">
+              <div class="product-price font-bold text-blue-500 text-lg">
                 $299.00
+              </div>
+              <!-- button -->
+              <div
+                class="
+                  complete-order-button
+                  w-32
+                  h-8
+                  flex
+                  items-center
+                  justify-center
+                  bg-yellow-500
+                  rounded
+                  text-white
+                  cursor-pointer
+                  hover:bg-yellow-600
+                "
+              >
+                Add to Cart
               </div>
             </div>
 
@@ -675,7 +721,9 @@
                   alt=""
                 />
               </div>
-              <div class="product-name w-48 text-blue-700 font-bold mt-2 text-sm">
+              <div
+                class="product-name w-48 text-blue-500 font-bold mt-2 text-sm"
+              >
                 2020 Apple MacBook Pro with Apple M1 Chip (13-inch, 8GB RAM,
                 256GB SSD Storage) - Space Gray
               </div>
@@ -683,8 +731,26 @@
               <div class="product-rating text-yellow-300 font-bold my-1">
                 ⭐⭐⭐⭐⭐ 5
               </div>
-              <div class="product-price font-bold text-blue-700 text-lg">
+              <div class="product-price font-bold text-blue-500 text-lg">
                 $1,099.99
+              </div>
+              <!-- button -->
+              <div
+                class="
+                  complete-order-button
+                  w-32
+                  h-8
+                  flex
+                  items-center
+                  justify-center
+                  bg-yellow-500
+                  rounded
+                  text-white
+                  cursor-pointer
+                  hover:bg-yellow-600
+                "
+              >
+                Add to Cart
               </div>
             </div>
 
@@ -697,7 +763,9 @@
                   alt=""
                 />
               </div>
-              <div class="product-name w-48 text-blue-700 font-bold mt-2 text-sm">
+              <div
+                class="product-name w-48 text-blue-500 font-bold mt-2 text-sm"
+              >
                 New Apple iPhone 12 Pro Max (512GB, Pacific Blue) [Locked] +
                 Carrier Subscription
               </div>
@@ -705,8 +773,26 @@
               <div class="product-rating text-yellow-300 font-bold my-1">
                 ⭐⭐⭐⭐⭐ 5
               </div>
-              <div class="product-price font-bold text-blue-700 text-lg">
+              <div class="product-price font-bold text-blue-500 text-lg">
                 $1,399.00
+              </div>
+              <!-- button -->
+              <div
+                class="
+                  complete-order-button
+                  w-32
+                  h-8
+                  flex
+                  items-center
+                  justify-center
+                  bg-yellow-500
+                  rounded
+                  text-white
+                  cursor-pointer
+                  hover:bg-yellow-600
+                "
+              >
+                Add to Cart
               </div>
             </div>
 
@@ -719,7 +805,9 @@
                   alt=""
                 />
               </div>
-              <div class="product-name w-48 text-blue-700 font-bold mt-2 text-sm">
+              <div
+                class="product-name w-48 text-blue-500 font-bold mt-2 text-sm"
+              >
                 Alienware Area 51M Gaming Laptop, 17.3" 300hz 3ms FHD Display,
                 Intel Core i7-10700K, Nvidia GeForce RTX 2070 Super 8GB GDDR6,
                 1TB SSD, 16GB RAM, Lunar Light (AWARR2-7323WHT-PUS)
@@ -728,32 +816,69 @@
               <div class="product-rating text-yellow-300 font-bold my-1">
                 ⭐⭐⭐⭐⭐ 4.5
               </div>
-              <div class="product-price font-bold text-blue-700 text-lg">
+              <div class="product-price font-bold text-blue-500 text-lg">
                 $2,600.00
+              </div>
+              <!-- button -->
+              <div
+                class="
+                  complete-order-button
+                  w-32
+                  h-8
+                  flex
+                  items-center
+                  justify-center
+                  bg-yellow-500
+                  rounded
+                  text-white
+                  cursor-pointer
+                  hover:bg-yellow-600
+                "
+              >
+                Add to Cart
               </div>
             </div>
 
-                    <!-- product 5 -->
-                    <div class="main-product m-2">
-                      <div class="product-image w-48 h-52 bg-white rounded-lg">
-                        <img
-                          class="w-full h-full object-contain p-4"
-                          src="https://m.media-amazon.com/images/I/712derGmH8L._UY560_.jpg"
-                          alt=""
-                        />
-                      </div>
-                      <div class="product-name w-48 text-blue-700 font-bold mt-2 text-sm">
-                        2020 Tesla S Long Range Plus
-                      </div>
-                      <div class="product-make text-blue-300 font-bold">Tesla</div>
-                      <div class="product-rating text-yellow-300 font-bold my-1">
-                        ⭐⭐⭐⭐⭐ 4.5
-                      </div>
-                      <div class="product-price font-bold text-blue-700 text-lg">
-                        $70,620.00
-                      </div>
-                    </div>
-
+            <!-- product 5 -->
+            <div class="main-product m-2">
+              <div class="product-image w-48 h-52 bg-white rounded-lg">
+                <img
+                  class="w-full h-full object-contain p-4"
+                  src="https://m.media-amazon.com/images/I/712derGmH8L._UY560_.jpg"
+                  alt=""
+                />
+              </div>
+              <div
+                class="product-name w-48 text-blue-500 font-bold mt-2 text-sm"
+              >
+                2020 Tesla S Long Range Plus
+              </div>
+              <div class="product-make text-blue-300 font-bold">Tesla</div>
+              <div class="product-rating text-yellow-300 font-bold my-1">
+                ⭐⭐⭐⭐⭐ 4.5
+              </div>
+              <div class="product-price font-bold text-blue-500 text-lg">
+                $70,620.00
+              </div>
+              <!-- button -->
+              <div
+                class="
+                  complete-order-button
+                  w-32
+                  h-8
+                  flex
+                  items-center
+                  justify-center
+                  bg-yellow-500
+                  rounded
+                  text-white
+                  cursor-pointer
+                  hover:bg-yellow-600
+                "
+              >
+                Add to Cart
+              </div>
+            </div>
           </div>
         </div>
       </div>
