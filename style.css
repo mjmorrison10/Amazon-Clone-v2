@@ -1,9 +1,6 @@
-
-
 .main-section-banner {
-  
-  background:  linear-gradient(to right,rgb(59,130,246,0), rgb(30,58,138)), url("https://i.ibb.co/JnmTD12/banner.jpg");
-background-position: center;
-background-size: cover;
-
+  background: linear-gradient(to right, rgb(59, 130, 246, 0), rgb(30, 58, 138)),
+    url("https://i.ibb.co/JnmTD12/banner.jpg");
+  background-position: center;
+  background-size: cover;
 }
