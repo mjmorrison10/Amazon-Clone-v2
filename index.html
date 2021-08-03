@@ -5,12 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Amazon 2.0</title>
+
+    <!-- tailwind css -->
     <link
       href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
       rel="stylesheet"
     />
+
+    <!-- style.css -->
     <link rel="stylesheet" href="style.css" />
 
+    <!-- fontawesome -->
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
@@ -18,6 +23,8 @@
       crossorigin="anonymous"
     />
 
+    <!-- JDenticon -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/jdenticon@3.1.0/dist/jdenticon.min.js"
       async
@@ -25,17 +32,20 @@
       crossorigin="anonymous"
     ></script>
 
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <!-- Firebase SDK -->
     <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
-
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <!-- Firebase Analytics -->
     <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-analytics.js"></script>
-
+    <!-- Firebase FireStore -->
     <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-firestore.js"></script>
 
-    <script src="./script.js"></script>
+    <!-- firebase.js -->
     <script src="./firebase.js"></script>
+
+    <!-- Script.js -->
+    <script src="./script.js"></script>
+
+    <!-- header.js -->
     <script src="./header.js"></script>
   </head>
   <body>
@@ -146,7 +156,14 @@
         >
           <!-- heart svg icon -->
           <svg
-            class="h-5 w-5 cursor-pointer duration-500 transform hover:scale-125"
+            class="
+              h-5
+              w-5
+              cursor-pointer
+              duration-500
+              transform
+              hover:scale-125
+            "
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
@@ -187,18 +204,17 @@
                   absolute
                   -top-1
                   -right-1
-                  h-4
-                  w-4
-                  bg-white
+                  h-5
+                  w-5
+                  bg-blue-200
                   rounded-full
+                  font-bold
                   flex
                   justify-center
                   items-center
                   text-gray-800 text-xs
                 "
-              >
-                1
-              </div>
+              ></div>
               <!-- cart svg icon -->
               <svg
                 class="h-5 w-5 text-blue-300"
@@ -220,7 +236,14 @@
           <!-- bell svg icon -->
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="h-5 w-5 cursor-pointer duration-500 transform hover:scale-125"
+            class="
+              h-5
+              w-5
+              cursor-pointer
+              duration-500
+              transform
+              hover:scale-125
+            "
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -235,7 +258,7 @@
           <!-- Jdenticon icon -->
           <svg
             class="h-12 w-12 rounded duration-500 transform hover:scale-105"
-            data-jdenticon-value="jessy"
+            data-jdenticon-value="Michael M"
           ></svg>
         </div>
       </div>
@@ -449,13 +472,12 @@
 
       <!-- main section -->
       <div class="main-section flex-1 p-6 bg-gray-900">
-
         <!-- banner -->
         <div class="main-section-banner h-44 rounded-lg flex items-end">
           <div
             class="
               button
-              bg-white
+              bg-blue-100
               w-36
               h-10
               rounded-full
@@ -769,324 +791,7 @@
         <!-- Section Deals -->
         <div class="main-section-deals mt-5">
           <h1 class="text-2xl font-bold text-gray-500 mb-5">Hot Deals 🔥</h1>
-          <div class="main-section-product flex flex-wrap">
-            <!-- Product 1 -->
-            <div class="main-product m-2">
-              <!-- Img -->
-              <div
-                class="
-                  product-image
-                  w-48
-                  h-52
-                  bg-white
-                  rounded-lg
-                  duration-500
-                  transform
-                  hover:scale-105
-                "
-              >
-                <img
-                  class="w-full h-full object-contain p-4"
-                  src="https://m.media-amazon.com/images/I/61-PblYntsL._AC_SL1500_.jpg"
-                  alt=""
-                />
-              </div>
-
-              <!-- desc -->
-              <div
-                class="product-name w-48 text-blue-500 font-bold mt-2 text-sm"
-              >
-                Nintendo Switch with Neon Blue and Neon Red Joy‑Con -
-                HAC-001(-01)
-              </div>
-              <div class="product-make text-blue-300 font-bold">Nintendo</div>
-              <div class="product-rating text-yellow-300 font-bold my-1">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half"></i> 4.5
-              </div>
-              <div class="product-price font-bold text-blue-500 text-lg">
-                $299.00
-              </div>
-              <!-- button -->
-              <div
-                class="
-                  complete-order-button
-                  hover:bg-yellow-600
-                  text-md
-                  w-32
-                  h-8
-                  flex
-                  items-center
-                  justify-center
-                  bg-yellow-500
-                  rounded
-                  text-white
-                  cursor-pointer
-                  hover:bg-yellow-600
-                  duration-1000
-                  transform
-                  hover:scale-105
-                "
-              >
-                Add to Cart
-              </div>
-            </div>
-
-            <!-- Product 2 -->
-            <div class="main-product m-2">
-              <!-- image -->
-              <div
-                class="
-                  product-image
-                  w-48
-                  h-52
-                  bg-white
-                  rounded-lg
-                  duration-500
-                  transform
-                  hover:scale-105
-                "
-              >
-                <img
-                  class="w-full h-full object-contain p-4"
-                  src="https://m.media-amazon.com/images/I/71an9eiBxpL._AC_SL1500_.jpg"
-                  alt=""
-                />
-              </div>
-              <div
-                class="product-name w-48 text-blue-500 font-bold mt-2 text-sm"
-              >
-                2020 Apple MacBook Pro with Apple M1 Chip (13-inch, 8GB RAM,
-                256GB SSD Storage) - Space Gray
-              </div>
-              <div class="product-make text-blue-300 font-bold">Apple</div>
-              <div class="product-rating text-yellow-300 font-bold my-1">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i> 5
-              </div>
-              <div class="product-price font-bold text-blue-500 text-lg">
-                $1,099.99
-              </div>
-              <!-- button -->
-              <div
-                class="
-                  complete-order-button
-                  hover:bg-yellow-600
-                  text-md
-                  w-32
-                  h-8
-                  flex
-                  items-center
-                  justify-center
-                  bg-yellow-500
-                  rounded
-                  text-white
-                  cursor-pointer
-                  hover:bg-yellow-600
-                  duration-1000
-                  transform
-                  hover:scale-105
-                "
-              >
-                Add to Cart
-              </div>
-            </div>
-
-            <!-- product 3 -->
-            <div class="main-product m-2">
-              <!-- image -->
-              <div
-                class="
-                  product-image
-                  w-48
-                  h-52
-                  bg-white
-                  rounded-lg
-                  duration-500
-                  transform
-                  hover:scale-105
-                "
-              >
-                <img
-                  class="w-full h-full object-contain p-4"
-                  src="https://m.media-amazon.com/images/I/71MHTD3uL4L._FMwebp__.jpg"
-                  alt=""
-                />
-              </div>
-              <div
-                class="product-name w-48 text-blue-500 font-bold mt-2 text-sm"
-              >
-                New Apple iPhone 12 Pro Max (512GB, Pacific Blue) [Locked] +
-                Carrier Subscription
-              </div>
-              <div class="product-make text-blue-300 font-bold">Apple</div>
-              <div class="product-rating text-yellow-300 font-bold my-1">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i> 5
-              </div>
-              <div class="product-price font-bold text-blue-500 text-lg">
-                $1,399.00
-              </div>
-              <!-- button -->
-              <div
-                class="
-                  complete-order-button
-                  hover:bg-yellow-600
-                  text-md
-                  w-32
-                  h-8
-                  flex
-                  items-center
-                  justify-center
-                  bg-yellow-500
-                  rounded
-                  text-white
-                  cursor-pointer
-                  hover:bg-yellow-600
-                  duration-1000
-                  transform
-                  hover:scale-105
-                "
-              >
-                Add to Cart
-              </div>
-            </div>
-
-            <!-- product 4 -->
-            <div class="main-product m-2 inline-block">
-              <!-- image -->
-              <div
-                class="
-                  product-image
-                  w-48
-                  h-52
-                  bg-white
-                  rounded-lg
-                  duration-500
-                  transform
-                  hover:scale-105
-                "
-              >
-                <img
-                  class="w-full h-full object-contain p-4"
-                  src="https://m.media-amazon.com/images/I/71BQimu5ChL._AC_SL1500_.jpg"
-                  alt=""
-                />
-              </div>
-              <div
-                class="product-name w-48 text-blue-500 font-bold mt-2 text-sm"
-              >
-                Alienware Area 51M Gaming Laptop, 17.3" 300hz 3ms FHD Display,
-                Intel Core i7-10700K, Nvidia GeForce RTX 2070 Super 8GB GDDR6,
-                1TB SSD, 16GB RAM, Lunar Light (AWARR2-7323WHT-PUS)
-              </div>
-              <div class="product-make text-blue-300 font-bold">Alienware</div>
-              <div class="product-rating text-yellow-300 font-bold my-1">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half"></i> 4.5
-              </div>
-              <div class="product-price font-bold text-blue-500 text-lg">
-                $2,600.00
-              </div>
-              <!-- button -->
-              <div
-                class="
-                  complete-order-button
-                  hover:bg-yellow-600
-                  text-md
-                  w-32
-                  h-8
-                  flex
-                  items-center
-                  justify-center
-                  bg-yellow-500
-                  rounded
-                  text-white
-                  cursor-pointer
-                  hover:bg-yellow-600
-                  duration-1000
-                  transform
-                  hover:scale-105
-                "
-              >
-                Add to Cart
-              </div>
-            </div>
-
-            <!-- product 5 -->
-            <div class="main-product m-2">
-              <!-- image -->
-              <div
-                class="
-                  product-image
-                  w-48
-                  h-52
-                  bg-white
-                  rounded-lg
-                  duration-500
-                  transform
-                  hover:scale-105
-                "
-              >
-                <img
-                  class="w-full h-full object-contain p-4"
-                  src="https://m.media-amazon.com/images/I/712derGmH8L._UY560_.jpg"
-                  alt=""
-                />
-              </div>
-              <div
-                class="product-name w-48 text-blue-500 font-bold mt-2 text-sm"
-              >
-                2020 Tesla S Long Range Plus
-              </div>
-              <div class="product-make text-blue-300 font-bold">Tesla</div>
-              <div class="product-rating text-yellow-300 font-bold my-1">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half"></i> 4.5
-              </div>
-              <div class="product-price font-bold text-blue-500 text-lg">
-                $70,620.00
-              </div>
-              <!-- button -->
-              <div
-                class="
-                  complete-order-button
-                  hover:bg-yellow-600
-                  text-md
-                  w-32
-                  h-8
-                  flex
-                  items-center
-                  justify-center
-                  bg-yellow-500
-                  rounded
-                  text-white
-                  cursor-pointer
-                  hover:bg-yellow-600
-                  duration-1000
-                  transform
-                  hover:scale-105
-                "
-              >
-                Add to Cart
-              </div>
-            </div>
-          </div>
+          <div class="main-section-product flex flex-wrap"></div>
         </div>
       </div>
     </div>
