@@ -18,25 +18,24 @@ function getItems() {
     });
 }
 
-function addToCart(item){
-    let cartItem = db.collection("cart-items").doc(item.id);
-    cartItem.get()
-    .then(function(doc){
-        if(doc.exists){
-            cartItem.update({
-                quantity: doc.data().quantity + 1
-            })
-        } else {
-            cartItem.set({
-                image: item.image,
-                make: item.make,
-                name: item.name,
-                price: item.price,
-                rating: item.rating,
-                quantity: 1
-            })
-        }
-    })
+function addToCart(item) {
+  let cartItem = db.collection("cart-items").doc(item.id);
+  cartItem.get().then(function (doc) {
+    if (doc.exists) {
+      cartItem.update({
+        quantity: doc.data().quantity + 1,
+      });
+    } else {
+      cartItem.set({
+        image: item.image,
+        make: item.make,
+        name: item.name,
+        price: item.price,
+        rating: item.rating,
+        quantity: 1,
+      });
+    }
+  });
 }
 
 function generateItems(items) {
@@ -77,7 +76,7 @@ function generateItems(items) {
       
     </div>
     <div class="product-price font-bold text-blue-500 text-lg">
-      $ ${item.price}
+      ${numeral(item.price).format("$0,0,00")}
     </div>
 `;
 
